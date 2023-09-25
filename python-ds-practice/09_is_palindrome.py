@@ -21,3 +21,12 @@ def is_palindrome(phrase):
         >>> is_palindrome('Noon')
         True
     """
+
+    spaceless_phrase_list = [item for item in phrase if item != " "]
+    spaceless_phrase_list.reverse()
+
+    spaceless_original = [item for item in phrase if item != " "]
+
+    return "".join(spaceless_phrase_list).upper() == "".join(spaceless_original).upper()
+
+# use replace and slice
