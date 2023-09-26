@@ -27,6 +27,6 @@ def is_palindrome(phrase):
 
     spaceless_original = [item for item in phrase if item != " "]
 
-    return "".join(spaceless_phrase_list).upper() == "".join(spaceless_original).upper()
+    return "".join(spaceless_phrase_list) == "".join(spaceless_original).upper()
 
 # use replace and slice

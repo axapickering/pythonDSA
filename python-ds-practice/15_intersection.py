@@ -15,3 +15,4 @@ def intersection(l1, l2):
     """
 
     return list(set(l1) & set(l2))
+# alternatively, return list(l1.intersection(l2))

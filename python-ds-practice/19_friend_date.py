@@ -18,3 +18,5 @@ def friend_date(a, b):
     """
 
     return len(set(a[2]) & set(b[2])) > 0
+
+# alt: return len(set(a[2]).intersection(set(b[2]))) > 0
