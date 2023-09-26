@@ -11,3 +11,8 @@ def mode(nums):
         >>> mode([2, 2, 3, 3, 2])
         2
     """
+    freq = [nums.count(amount) for amount in nums ]
+    index = freq.index(max(freq))
+
+    return nums[index]
+

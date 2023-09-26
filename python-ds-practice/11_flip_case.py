@@ -11,3 +11,11 @@ def flip_case(phrase, to_swap):
         'AaaaHHH'
 
     """
+    to_swap = to_swap.upper()
+    phrase_list = list(phrase)
+    for index in range(len(phrase_list)):
+        if phrase_list[index] == to_swap:
+            phrase_list[index] = phrase_list[index].lower()
+        elif phrase_list[index] == to_swap.lower():
+            phrase_list[index] = phrase_list[index].upper()
+    return "".join(phrase_list)
