@@ -19,3 +19,5 @@ def multiply_even_numbers(nums):
         total = total * even
 
     return total
+
+# simplify to a loop
